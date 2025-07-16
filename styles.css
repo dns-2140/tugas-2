@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  /* Primary Blue - Dominant brand color */
+  --blue-primary: #2563eb; /* A vibrant, trustworthy blue */
+
+  /* Lighter Shades */
+  --blue-light-1: #93c5fd; /* Very light - for backgrounds */
+  --blue-light-2: #60a5fa; /* Light - for secondary elements */
+
+  /* Darker Shades */
+  --blue-dark-1: #1d4ed8; /* Darker - for hover states */
+  --blue-dark-2: #1e40af; /* Very dark - for text/accents */
+
+  /* Special Blues */
+  --blue-accent: #3b82f6; /* For CTAs and important elements */
+  --blue-pastel: #bfdbfe; /* For subtle highlights */
+}
+
+.underline-shadow {
+  border-bottom: 1px solid (128, 128, 128, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue-primary);
+  padding: 2rem 8rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* HERO */
+
+.hero-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 8rem;
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  background-color: var(--blue-primary);
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.hero-content .btn-primary {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+/* ABOUT */
+.about {
+  padding: 2rem 8rem;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  h3 {
+    color: var(--blue-accent);
+  }
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+  .about-property {
+    color: var(--blue-primary);
+  }
+}
+
+.about-detail {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0);
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 2rem 8rem;
+}
+
+.portfolio-text {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  h3 {
+    color: var(--blue-accent);
+  }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
