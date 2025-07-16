@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -30,6 +30,8 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -152,4 +154,34 @@ ul {
   border-radius: 0.5rem;
   padding: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+  .hero-content {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 0;
+    img {
+      width: 400px;
+    }
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio {
+    padding: 0;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
 }
